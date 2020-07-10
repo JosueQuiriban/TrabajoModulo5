@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import cl.awakelab.model.Accidente;
+import cl.awakelab.beans.Accidente;
 
 @Controller
 public class ControlAccidente {

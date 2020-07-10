@@ -1,4 +1,4 @@
-package cl.awakelab.model;
+package cl.awakelab.beans;
 
 
 public class Accidente {
