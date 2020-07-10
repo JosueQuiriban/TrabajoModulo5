@@ -1,0 +1,423 @@
+
+
+/*******************1) Estilos constantes, body, main, footer, font-family, flex, columnas mobile 100%************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	 background: linear-gradient(to top, #757f9a, #d7dde8); 
+	 min-height:100%; 
+    
+}
+
+main{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    padding-top: 5em;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 2em;
+    min-height: auto;
+    
+    
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/***************************************************************************************************************/
+
+header{
+    position: fixed;
+	left: 0; 
+    right: 0;
+}
+
+#cabecerafija2{
+    width: 100%;
+    height: 3.8em;
+    margin: 0;
+    background: linear-gradient(to top, #000000, #434343);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+
+.logo {
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.6em; 
+}
+
+#logoheader{
+    height: 2.5em;
+    width: auto;
+}
+
+.titulo-cabecera-fija{
+    float: left;
+    height: 3.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.6em;
+    width: 50%;
+}
+
+#tituloHI{
+    float: left;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: rgb(255, 230, 0);
+    letter-spacing: 4px;
+}
+
+#tituloSubHI{
+    float: left;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: whitesmoke;
+    margin-left: 0;
+    margin-top: 0.2em;
+}
+
+.titulo-pag{
+    background: linear-gradient(to bottom, #0575e6, #021b79);
+    margin-bottom: 0.3em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.titulo-pag p {
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: large;
+    font-weight: bold;
+}
+
+#out {
+    width: 3em;
+    height: 1.5em;
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    inline-size: 1em;
+    outline: none;
+    margin: 0.3em 2.8em 0 1em;
+    color: whitesmoke;
+}
+
+nav {
+    float: left;
+    margin-top: 0.2em;
+    font-weight: bold;
+}
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-right: 2em;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 2em;
+        background-color: rgb(255, 230, 0);
+        border-radius: 2.5px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0 1em;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    a:link, a:visited {
+            color: rgb(92, 92, 92);
+        }
+
+
+    nav ul li a:hover {
+         background: black;
+         color: whitesmoke;
+         border-radius: 2.5px;         
+    }
+
+        
+  
+            body.home a.home:link,
+            body.reciclado a.reciclado:link,
+            body.compost a.compost:link,
+            body.boletas a.boletas:link {
+                background: black;
+            }
+
+
+.pestañas {
+    width: 100%;
+    margin: 1.5em auto;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+
+.cont-text-pag{
+    background: linear-gradient(to bottom, #ece9e6, #ffffff);
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: justify;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: rgb(92, 92, 92);
+    font-size: small;
+    border-radius: 3px;
+}
+
+.cont-text-pag a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+}
+
+
+
+
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    height:200px;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.copy{
+    width: 100%;
+    margin: 2em auto 1em auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.fono {
+    width: 100%;
+    margin: 0 auto 1em auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.rrss {
+    width: 33%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.formContacto{
+	width:90%;
+	margin: auto;
+	font-weight: bold;
+	
+}
+
+.formContacto input{
+    width:100%;
+    margin-bottom: 0.5em;
+    color: rgb(92, 92, 92);
+   line-height: 1.1em;
+    
+}
+
+.divideRegistro input{
+    width: 5%;
+    margin: 0;
+}
+
+.detalleTA{
+	 width: 100%;
+	 resize: none;
+	 font-family: 'Montserrat', sans-serif;
+	 background-color: #FFFFFF;
+}
+
+.btnForm{
+	width: 50%;
+    margin: 1em 25% 0 25%;
+    line-height: 2em;
+     background: linear-gradient(to bottom, #0575e6, #021b79);
+     border: none;
+     color:  #FFFFFF;
+     font-weight: bold;
+     
+	
+}
+
+
+/***************** 2) Estilo media only max-width:415px ****************************************************/
+
+@media only screen and (max-width: 400px){
+    
+    #tituloSubHI{
+        display: none;
+    }
+
+    .rrss{
+        width: 100%;
+    }
+
+}
+
+/***************************************************************************************************************/
+
+
+/***************** 3) Estilo media only min-width: 600px ****************************************************/
+
+@media only screen and (min-width: 600px){
+    /* For tablets: */
+
+    .col-1{
+        width: 100%;
+    }
+
+     
+    .cont-text-pag{
+        padding: 2em;
+    }
+
+       
+}
+
+/***************************************************************************************************************/
+
+
+
+/***************** 4) Estilo media only min-width: 705px ****************************************************/
+
+@media only screen and (min-width: 705px){
+
+    .titulo-cabecera-fija{
+        height:3.5em;
+        padding-bottom: 0.4em;
+        padding-top: 0.9em;
+        width: 65%;
+    }
+    
+    #tituloHI{
+        font-size: 2em;
+    }
+    
+    #tituloSubHI{
+        font-size: 0.9em;
+        margin-left: 2em;
+        margin-top: 1.3em;
+    }
+
+    
+
+    
+    
+}
+    
+/***************** 5) Estilo media only min-width: 800px ****************************************************/
+
+@media only screen and (min-width: 800px){
+    /* For desktop: */
+
+    .col-2{
+        width: 49.5%;
+        margin: 0.2em auto;
+    }
+
+    main{
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-top: 5em;
+    }
+
+    .logo{
+        margin-left: 3em;
+        margin-top: 0.5em;
+        height: 3.2em;
+    }
+
+    #logoheader{
+        height: 3.2em;
+        width: auto;
+    }
+
+    p{
+        font-size: 1.1em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .titulo-pag {
+        padding:0;
+        margin-top: 1em;
+    }
+
+    .titulo-pag p {
+        font-size: 1em;
+    }    
+     
+    #cabecerafija2{
+        height: 3em; 
+    }
+
+    .titulo-cabecera-fija{
+        height:2.5em;
+        padding-top: 0.1em;
+        width: 65%;
+    }
+    
+    #tituloHI{
+        font-size: 2.5em;
+    }
+    
+    #tituloSubHI{
+        font-size: 0.8em;
+        margin-left: 2em;
+        margin-top: 1.9em;
+    }
+
+    .nMes{
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(26, 26, 206);
+    }
+    
+    
+    
+}
